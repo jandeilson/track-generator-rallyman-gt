@@ -1,0 +1,36 @@
+@import 'variables.scss';
+@import 'functions.scss';
+@import 'mixins.scss';
+
+.test {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+.hexagon {
+  width: $hexagonSizeWidth;
+  height: $haxagonSizeHeight;
+  background: $hexagonBackgroundColor;
+  position: $hexagonPosition;
+
+  &:before {
+    content: '';
+    position: $hexagonPosition;
+
+    @include hexagonShapeMeasurement(0, 0, 0, $hexagonBorderSize, 0);
+    @include hexagonShape('left', $hexagonSizeWidth);
+    @include hexagonShape('right', $hexagonSizeWidth);
+    @include hexagonShape('bottom', $hexagonBorderSize, $hexagonShapeColor);
+  }
+
+  &:after {
+    content: '';
+    position: $hexagonPosition;
+
+    @include hexagonShapeMeasurement(0, 0, 0, 0, $hexagonBorderSize);
+    @include hexagonShape('left', $hexagonSizeWidth);
+    @include hexagonShape('right', $hexagonSizeWidth);
+    @include hexagonShape('top', $hexagonBorderSize, $hexagonShapeColor);
+  }
+}

@@ -1,24 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+import { HexagonShape } from './component/hexagon';
+import { tracks } from './data';
+import { arrangedHexagons } from './logic';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App test'>
+      {arrangedHexagons().map((track) => {
+        return (
+          <HexagonShape
+            key={track.trackId}
+            id={track.trackId}
+            arrange={{
+              left: track.arrange?.left ? track.arrange.left : 0,
+              display: track.arrange?.display,
+            }}
+          />
+        );
+      })}
     </div>
   );
 }

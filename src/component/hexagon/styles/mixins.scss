@@ -1,0 +1,27 @@
+@import './functions.scss';
+
+@mixin hexagonShape($direction, $hexagonSize, $color: '') {
+  @if ($direction == 'top') or ($direction == 'bottom') {
+    border-#{$direction}: $hexagonSize;
+    border-#{$direction}-color: $color;
+  } @else {
+    border-#{$direction}: hexagonShapeCalc($hexagonSize);
+    border-#{$direction}-color: transparent;
+  }
+
+  border-#{$direction}-style: solid;
+}
+
+@mixin hexagonShapeMeasurement($left, $width, $height, $top, $bottom) {
+  @if ($top > 0) {
+    top: unquote('-#{$top}');
+  }
+
+  @if ($bottom > 0) {
+    bottom: unquote('-#{$bottom}');
+  }
+
+  left: $left;
+  width: $width;
+  height: $height;
+}
