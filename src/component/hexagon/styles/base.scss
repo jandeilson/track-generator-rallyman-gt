@@ -2,17 +2,12 @@
 @import 'functions.scss';
 @import 'mixins.scss';
 
-.test {
-  position: absolute;
-  top: 50px;
-  left: 50px;
-}
-
 .hexagon {
   width: $hexagonSizeWidth;
   height: $haxagonSizeHeight;
   background: $hexagonBackgroundColor;
   position: $hexagonPosition;
+  top: 40px;
 
   &:before {
     content: '';

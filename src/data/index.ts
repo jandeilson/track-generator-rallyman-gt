@@ -1,8 +1,8 @@
 export type Tracks = {
   trackId: string;
   imageId: string;
-  arrange?: {
-    left?: number;
+  style?: {
+    left?: string;
     display?: string;
   };
 }[];

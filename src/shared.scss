@@ -1,0 +1,15 @@
+@import './component/hexagon/styles/variables.scss';
+
+ul {
+  &.hexagons {
+    display: flex;
+    position: relative;
+    list-style: none;
+
+    li {
+      margin: 8px;
+      width: $hexagonSizeWidth;
+      height: $hexagonSizeWidth;
+    }
+  }
+}

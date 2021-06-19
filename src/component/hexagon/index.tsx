@@ -3,21 +3,16 @@ import './styles/base.scss';
 
 type HexagonShapeProps = {
   id: string;
-  arrange: {
-    left?: number;
-    right?: number;
-    top?: number;
-    bottom?: number;
+  style: {
     display?: string;
   };
 };
 
 export const HexagonShape: FunctionComponent<HexagonShapeProps> = ({
   id,
-  arrange,
+  style,
 }) => (
-  <div
-    className={`hexagon ${id}`}
-    style={{ left: arrange.left, display: arrange.display }}
-  />
+  <li>
+    <div className={`hexagon ${id}`} style={{ display: style.display }} />
+  </li>
 );

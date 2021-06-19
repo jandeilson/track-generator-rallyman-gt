@@ -31,7 +31,7 @@ export const arrangedHexagons = () => {
 
     arr.push(
       Object.assign(tracks[i], {
-        arrange: {
+        style: {
           left: i === 0 ? 0 : (currentValue += incrementValue),
           display: display[randomDisplay],
         },
