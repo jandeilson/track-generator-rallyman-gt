@@ -2,25 +2,12 @@ import React from 'react';
 import './App.scss';
 import './shared.scss';
 
-import { HexagonShape } from './component/hexagon';
-import { arrangedHexagons } from './logic';
+import { Hexagon } from './component/hexagon';
 
 function App() {
   return (
     <div className='App'>
-      <ul className='hexagons'>
-        {arrangedHexagons().map((track) => {
-          return (
-            <HexagonShape
-              key={track.trackId}
-              id={track.trackId}
-              style={{
-                display: track.style?.display,
-              }}
-            />
-          );
-        })}
-      </ul>
+      <Hexagon />
     </div>
   );
 }

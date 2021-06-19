@@ -1,18 +1,17 @@
 import React, { FunctionComponent } from 'react';
-import './styles/base.scss';
+import { arrangedHexagons } from '../../logic';
+import './styles/smart.scss';
 
-type HexagonShapeProps = {
-  id: string;
-  style: {
-    display?: string;
-  };
-};
+type HexagonProps = {};
 
-export const HexagonShape: FunctionComponent<HexagonShapeProps> = ({
-  id,
-  style,
-}) => (
-  <li>
-    <div className={`hexagon ${id}`} style={{ display: style.display }} />
-  </li>
+export const Hexagon: FunctionComponent<HexagonProps> = () => (
+  <ul className='hex-grid__list'>
+    {arrangedHexagons().map(({ trackId, imageId }) => {
+      return (
+        <li className='hex-grid__item'>
+          <div className='hex-grid__content'>{trackId}</div>
+        </li>
+      );
+    })}
+  </ul>
 );

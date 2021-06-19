@@ -25,7 +25,7 @@ export const arrangedHexagons = () => {
 
   const arr: Tracks = [];
 
-  for (let i = 0; i < getRandomTracks(tracks, 6).length; i++) {
+  for (let i = 0; i < getRandomTracks(tracks, 12).length; i++) {
     const display = ['none', 'block'];
     const randomDisplay = Math.floor(Math.random() * display.length);
 
