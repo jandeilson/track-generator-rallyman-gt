@@ -1,0 +1,391 @@
+@import './mixins.scss';
+
+.track {
+  position: absolute;
+  width: 268px;
+  height: 238px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    transform: rotate(var(--rotateDeg));
+  }
+
+  &.id103b2 {
+    &:before {
+      background: url('../../../assets/tracks.png') -10px -1856px;
+    }
+  }
+
+  &.id104a {
+    &:before {
+      background: url('../../../assets/tracks.png') -608px -1329px;
+    }
+  }
+
+  &.id104a1 {
+    &:before {
+      background: url('../../../assets/tracks.png') -908px -1329px;
+    }
+  }
+
+  &.id104a2 {
+    &:before {
+      background: url('../../../assets/tracks.png') -1208px -1329px;
+    }
+  }
+
+  &.id104b {
+    &:before {
+      background: url('../../../assets/tracks.png') -1512px -799px;
+    }
+  }
+
+  &.id104b1 {
+    &:before {
+      background: url('../../../assets/tracks.png') -1508px -1329px;
+    }
+  }
+
+  &.id104b2 {
+    &:before {
+      background: url('../../../assets/tracks.png') -10px -10px;
+    }
+  }
+
+  &.id105a {
+    &:before {
+      background: url('../../../assets/tracks.png') -612px -10px;
+    }
+  }
+
+  &.id105a1 {
+    &:before {
+      background: url('../../../assets/tracks.png') -612px -274px;
+    }
+  }
+
+  &.id105b {
+    &:before {
+      background: url('../../../assets/tracks.png') -10px -538px;
+    }
+  }
+
+  &.id105b1 {
+    &:before {
+      background: url('../../../assets/tracks.png') -310px -538px;
+    }
+  }
+
+  &.id106a {
+    &:before {
+      background: url('../../../assets/tracks.png') -309px -1856px;
+    }
+  }
+
+  &.id106a1 {
+    &:before {
+      background: url('../../../assets/tracks.png') -10px -1066px;
+    }
+  }
+
+  &.id106b {
+    &:before {
+      background: url('../../../assets/tracks.png') -1813px -10px;
+    }
+  }
+
+  &.id106b1 {
+    &:before {
+      background: url('../../../assets/tracks.png') -1813px -273px;
+    }
+  }
+
+  &.id107a {
+    &:before {
+      background: url('../../../assets/tracks.png') -1813px -536px;
+    }
+  }
+
+  &.id107a1 {
+    &:before {
+      background: url('../../../assets/tracks.png') -1813px -799px;
+    }
+  }
+
+  &.id107b {
+    &:before {
+      background: url('../../../assets/tracks.png') -608px -1856px;
+    }
+  }
+
+  &.id107b1 {
+    &:before {
+      background: url('../../../assets/tracks.png') -311px -1066px;
+    }
+  }
+
+  &.id108a {
+    &:before {
+      background: url('../../../assets/tracks.png') -1813px -1062px;
+    }
+  }
+
+  &.id108b {
+    &:before {
+      background: url('../../../assets/tracks.png') -1813px -1325px;
+    }
+  }
+
+  &.id109a {
+    &:before {
+      background: url('../../../assets/tracks.png') -10px -1593px;
+    }
+  }
+
+  &.id109b {
+    &:before {
+      background: url('../../../assets/tracks.png') -310px -1593px;
+    }
+  }
+
+  &.id110a {
+    &:before {
+      background: url('../../../assets/tracks.png') -612px -1066px;
+    }
+  }
+
+  &.id110b {
+    &:before {
+      background: url('../../../assets/tracks.png') -907px -1856px;
+    }
+  }
+
+  &.id111a {
+    &:before {
+      background: url('../../../assets/tracks.png') -610px -1593px;
+    }
+  }
+
+  &.id111a1 {
+    &:before {
+      background: url('../../../assets/tracks.png') -910px -1593px;
+    }
+  }
+
+  &.id111b {
+    &:before {
+      background: url('../../../assets/tracks.png') -1210px -1593px;
+    }
+  }
+
+  &.id111b1 {
+    &:before {
+      background: url('../../../assets/tracks.png') -1510px -1593px;
+    }
+  }
+
+  &.id112a {
+    &:before {
+      background: url('../../../assets/tracks.png') -311px -10px;
+    }
+  }
+
+  &.id112a1 {
+    &:before {
+      background: url('../../../assets/tracks.png') -1512px -1063px;
+    }
+  }
+
+  &.id112b {
+    &:before {
+      background: url('../../../assets/tracks.png') -610px -538px;
+    }
+  }
+
+  &.id112b1 {
+    &:before {
+      background: url('../../../assets/tracks.png') -912px -10px;
+    }
+  }
+
+  &.id113a {
+    &:before {
+      background: url('../../../assets/tracks.png') -912px -274px;
+    }
+  }
+
+  &.id113b {
+    &:before {
+      background: url('../../../assets/tracks.png') -912px -538px;
+    }
+  }
+
+  &.id114a {
+    &:before {
+      background: url('../../../assets/tracks.png') -913px -1066px;
+    }
+  }
+
+  &.id114b {
+    &:before {
+      background: url('../../../assets/tracks.png') -1206px -1856px;
+    }
+  }
+
+  &.id115a {
+    &:before {
+      background: url('../../../assets/tracks.png') -1810px -1593px;
+    }
+  }
+
+  &.id115a1 {
+    &:before {
+      background: url('../../../assets/tracks.png') -2113px -10px;
+    }
+  }
+
+  &.id115b {
+    &:before {
+      background: url('../../../assets/tracks.png') -2113px -273px;
+    }
+  }
+
+  &.id115b1 {
+    &:before {
+      background: url('../../../assets/tracks.png') -2113px -536px;
+    }
+  }
+
+  &.id116a {
+    &:before {
+      background: url('../../../assets/tracks.png') -10px -1329px;
+    }
+  }
+
+  &.id116a1 {
+    &:before {
+      background: url('../../../assets/tracks.png') -10px -274px;
+    }
+  }
+
+  &.id116b {
+    &:before {
+      background: url('../../../assets/tracks.png') -10px -802px;
+    }
+  }
+
+  &.id116b1 {
+    &:before {
+      background: url('../../../assets/tracks.png') -310px -802px;
+    }
+  }
+
+  &.id117a {
+    &:before {
+      background: url('../../../assets/tracks.png') -610px -802px;
+    }
+  }
+
+  &.id117a1 {
+    &:before {
+      background: url('../../../assets/tracks.png') -910px -802px;
+    }
+  }
+
+  &.id117b {
+    &:before {
+      background: url('../../../assets/tracks.png') -1505px -1856px;
+    }
+  }
+
+  &.id117b1 {
+    &:before {
+      background: url('../../../assets/tracks.png') -1512px -10px;
+    }
+  }
+
+  &.id118a {
+    &:before {
+      background: url('../../../assets/tracks.png') -2113px -799px;
+    }
+  }
+
+  &.id118b {
+    &:before {
+      background: url('../../../assets/tracks.png') -2113px -1062px;
+    }
+  }
+
+  &.id119a {
+    &:before {
+      background: url('../../../assets/tracks.png') -2113px -1325px;
+    }
+  }
+
+  &.id119b {
+    &:before {
+      background: url('../../../assets/tracks.png') -2113px -1588px;
+    }
+  }
+
+  &.id120a {
+    &:before {
+      background: url('../../../assets/tracks.png') -1512px -273px;
+    }
+  }
+
+  &.id120b {
+    &:before {
+      background: url('../../../assets/tracks.png') -1804px -1856px;
+    }
+  }
+
+  &.id102a {
+    &:before {
+      background: url('../../../assets/tracks.png') -311px -274px;
+    }
+  }
+
+  &.id102b {
+    &:before {
+      background: url('../../../assets/tracks.png') -309px -1329px;
+    }
+  }
+
+  &.id103a {
+    &:before {
+      background: url('../../../assets/tracks.png') -1212px -10px;
+    }
+  }
+
+  &.id103a1 {
+    &:before {
+      background: url('../../../assets/tracks.png') -1212px -274px;
+    }
+  }
+
+  &.id103a2 {
+    &:before {
+      background: url('../../../assets/tracks.png') -1212px -538px;
+    }
+  }
+
+  &.id103b {
+    &:before {
+      background: url('../../../assets/tracks.png') -1212px -802px;
+    }
+  }
+
+  &.id103b1 {
+    &:before {
+      background: url('../../../assets/tracks.png') -1512px -536px;
+    }
+  }
+}
