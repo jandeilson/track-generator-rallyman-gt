@@ -1,4 +1,11 @@
 .App {
   width: 1375px;
   height: 100%;
+  position: absolute;
+  cursor: move;
+  color: black;
+  max-width: 100%;
+  padding: 1em;
+  margin: auto;
+  user-select: none;
 }
