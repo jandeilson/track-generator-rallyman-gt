@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react'
-import { arrangedHexagons, random } from '../../logic'
-import { laneSize } from '../../data'
+import { circuitsCreator } from '../../logic'
+import { tiles } from '../../data'
 import './styles/smart.scss'
 import './styles/lanes.scss'
 
@@ -9,14 +9,16 @@ import Draggable from 'react-draggable'
 type HexagonProps = {}
 
 export const Hexagon: FunctionComponent<HexagonProps> = () => {
-  const randomlaneSize = laneSize[random(laneSize)]
+  const circuit = circuitsCreator(tiles)
+
+  console.log(circuit)
 
   return (
     <ul
       className="hex-grid__list"
-      style={{ '--amount': randomlaneSize } as React.CSSProperties}
+      style={{ '--amount': circuit.length } as React.CSSProperties}
     >
-      {arrangedHexagons(randomlaneSize).map(({ id, style }) => {
+      {circuit.tiles.map(({ id, style }) => {
         return (
           <Draggable axis="both">
             <li className="hex-grid__item">
